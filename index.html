@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+    <title>Portefeuille CSS tailwind</title>
+</head>
+<body>
+    <header class="flex justify-between items-center p-6 bg-gray-800 text-white">
+        <h1 class="text-2xl font-bold">Mon Portefeuille</h1>
+        <nav>
+            <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:underline">Accueil</a></li>
+            <li><a href="#projects" class="hover:underline">Projets</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white" style="background-image: url('img/pexels2.jpg');">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Bienvenue sur mon Portfolio la</h2>
+        <p class="text-lg md:text-2xl">Je suis un développeur web passionné.</p>
+    </section> 
+    <section class="p-8 bg-gray-100">
+        <h3 class="text-3xl font-bold mb-6 text-center">Mes Compétences</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow-lg">
+                <h4 class="text-xl font-semibold mb-2">HTML</h4>
+                <p>Niveau avancé en structuration de contenu web.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg">
+                <h4 class="text-xl font-semibold mb-2">HTML</h4>
+                <p>Niveau avancé en structuration de contenu web.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg">
+                <h4 class="text-xl font-semibold mb-2">HTML</h4>
+                <p>Niveau avancé en structuration de contenu web.</p>
+            </div>
+          <!-- Ajoutez d'autres compétences ici -->
+        </div>
+    </section>
+    <section id="projects" class="p-8">
+        <h3 class="text-3xl font-bold mb-6 text-center">Mes Projets</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow-lg">
+                <img src="projet1.jpg" alt="Projet 1" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-xl font-semibold mb-2">Projet 1</h4>
+                <p>Une brève description de votre projet.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg">
+                <img src="projet1.jpg" alt="Projet 1" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-xl font-semibold mb-2">Projet 1</h4>
+                <p>Une brève description de votre projet.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg">
+                <img src="projet1.jpg" alt="Projet 1" class="w-full h-48 object-cover mb-4">
+                <h4 class="text-xl font-semibold mb-2">Projet 1</h4>
+                <p>Une brève description de votre projet.</p>
+            </div>
+          <!-- Ajoutez d'autres projets ici -->
+        </div>
+    </section>
+    <section id="contact" class="p-8 bg-gray-200">
+        <h3 class="text-3xl font-bold mb-6 text-center">Contactez-moi</h3>
+        <form class="max-w-xl mx-auto bg-white p-6 shadow-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
+                <input type="text" id="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-700">Envoyer</button>
+        </form>
+        <footer class="p-6 bg-gray-800 text-white text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 Votre Nom. Tous droits réservés.</p>
+        </footer>
+          
+    </section>
+      
+
+      
+      
+      
+      
+</body>
+</html>
